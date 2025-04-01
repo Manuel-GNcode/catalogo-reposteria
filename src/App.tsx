@@ -1,8 +1,25 @@
+import {Header} from './components/Header.tsx'
+import {Footer} from './components/Footer.tsx'
+import {Hero} from './components/Hero.tsx'
+import { NavBar } from './components/NavBar.tsx'
+import { Route, Routes } from 'react-router-dom'
+import { Desserts } from './pages/Desserts.tsx'
+import { Drinks } from './pages/Drinks.tsx'
+import { Others } from './pages/others.tsx'
+
 function App() {
   return (
     <>
-      <h1 className="text-3xl font-bold underline">Catalogo de respostería</h1>
-      <img className="w-[500px]" src="/og.jpg" alt="og" />
+      <Header></Header>
+      <Hero></Hero>
+      <NavBar></NavBar>
+      <Routes>
+        <Route path='/' element={<Desserts />}></Route>
+        <Route path='/drinks' element={<Drinks />}></Route>
+        <Route path='/others' element={<Others />}></Route>
+        <Route path='/*' element={<Desserts />}></Route>
+      </Routes>
+      <Footer></Footer>
     </>
   );
 }
