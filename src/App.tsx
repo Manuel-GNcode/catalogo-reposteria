@@ -5,7 +5,7 @@ import { NavBar } from './components/NavBar.tsx'
 import { Route, Routes } from 'react-router-dom'
 import { Desserts } from './pages/Desserts.tsx'
 import { Drinks } from './pages/Drinks.tsx'
-import { Others } from './pages/others.tsx'
+import { Others } from './pages/Others.tsx'
 
 function App() {
   return (
