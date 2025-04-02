@@ -1,7 +1,7 @@
 export const Footer = () => {
   return (
-    <footer className="bg-gray-800 text-white flex justify-center items-center gap-x-8 py-8">
-      <div className="footer_div text-4xl">
+    <footer className="flex flex-wrap justify-center gap-x-8 bg-gray-800 text-sm text-white">
+      <div className="footer_div">
         <a href='#' ><i>⭐</i></a>
         <span className="flex gap-x-4">
           <a href='#' ><i>🍔</i></a>
@@ -11,7 +11,7 @@ export const Footer = () => {
       </div>
 
       <div className="footer_div">
-        <i className="text-4xl">🗺</i>
+        <i className="">🗺</i>
         <span>
           <p>Dirección</p>
           <p>guau guau</p>
@@ -19,7 +19,7 @@ export const Footer = () => {
       </div>
 
       <div className="footer_div">
-        <i className="text-4xl">📱</i>
+        <i className="">📱</i>
         <span>
           <p>celular</p>
           <p>+57 3118739864</p>
@@ -27,7 +27,7 @@ export const Footer = () => {
       </div>
 
       <div className="footer_div">
-        <i className="text-4xl">☠</i>
+        <i className="">☠</i>
         <span>
           <p>creado por</p>
           <p>guau guau</p>
