@@ -1,1 +1,10 @@
 @import "tailwindcss";
+
+@layer components {
+  .footer_div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    height: 60px;
+  }
+}
