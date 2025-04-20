@@ -1,7 +1,9 @@
 export const Hero = () => {
   return (
-    <div className="bg-amber-400 h-[300px] flex justify-center items-end pb-6">
-      <button className="bg-white text-2xl rounded-3xl px-6 py-4 h-fit">Obtener cupón</button>
-    </div>
+    <section className="relative h-[300px]">
+      <img className="h-full w-full object-center object-cover" src="images/banner_promocion.png" alt="Banner de promoción" />
+
+      <button className="font-Nunito bg-dark-purple text-soft-blue-green text-xl rounded-3xl px-8 py-1 absolute bottom-6 left-1/2 translate-x-[-50%] cursor-pointer border-4 border-dark-purple hover:bg-soft-blue-green hover:text-dark-purple whitespace-nowrap font-normal">Conseguir cupón</button>
+    </section>
   )
 }
