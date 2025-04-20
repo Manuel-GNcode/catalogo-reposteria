@@ -1,30 +1,20 @@
 export const Header = () => {
   return (
-    <header className="bg-amber-50 w-full flex flex-col items-center pt-10 pb-4">
-      <div className="w-[375px] p-4 flex flex-col items-center gap-6 border-b-2">
-        <div className="flex items-center">
-          <p className="text-7xl">⭐</p>
-          <p className="text-4xl w-[200px]">Hola, hambriento!</p>
-        </div>
+    <header className="flex flex-col gap-6 px-12 py-6 items-center">
+      <img src="images/logo.png" alt="Logo dulce despertar" className=""/>
 
-        <nav className="flex gap-10">
-          <a
-            className="bg-gray-800 text-white rounded-4xl px-6 py-1"
-            href="#"
-          >
-            Ofertas
-          </a>
-          <a
-            className="bg-gray-800 text-white rounded-4xl px-6 py-1"
-            href="#"
-          >
-            Productos
-          </a>
-        </nav>
+      <div className="flex gap-4 relative">
+        <a href="#">
+          <span className='block size-8 bg-center bg-cover bg-[url("../../public/images/iconos/instagram.png")] hover:bg-[url("../../public/images/iconos/instagram_active.png")]'></span>
+        </a>
+        <a href="#">
+          <span className='block size-8 bg-center bg-cover bg-[url("../../public/images/iconos/youtube.png")] hover:bg-[url("../../public/images/iconos/youtube_active.png")]'></span>
+        </a>
+        <a href="#">
+          <span className='block size-8 bg-center bg-cover bg-[url("../../public/images/iconos/pinterest.png")] hover:bg-[url("../../public/images/iconos/pinterest_active.png")]'></span>
+        </a>
+        <span className="absolute w-[150%] h-2 bg-soft-blue-green top-1/2 left-1/2 translate-[-50%] -z-1 rounded-sm"></span>
       </div>
-      <h1 className="font-bold tracking-wider text-3xl">
-        Catálogo de postres
-      </h1>
     </header>
   );
 };

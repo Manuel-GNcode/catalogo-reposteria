@@ -8,3 +8,13 @@
     height: 60px;
   }
 }
+
+@theme {
+  /* Primary */
+  --color-soft-blue-green: hsl(140.909, 100%, 87%);
+  --color-intense-rose: hsl(323, 100%, 77%);
+  --color-dark-purple: hsl(242.069, 40%, 14%);
+  /* Neutral */
+  --color-grayish-blue: hsl(160, 20%, 85%);
+  --color-soft-purple: hsl(253.529, 100%, 80%);
+}
