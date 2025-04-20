@@ -16,6 +16,9 @@
   font-display: swap;
   src: url("/fonts/Nunito-VariableFont_wght.ttf") format("truetype");
 }
+html {
+  font-family: 'Nunito', 'Times New Roman', Times, serif;
+}
 
 @theme {
   /* Primary */
@@ -26,5 +29,5 @@
   --color-grayish-blue: hsl(160, 20%, 85%);
   --color-soft-purple: hsl(253.529, 100%, 80%);
   /* Fuente */
-  --font-family-primary: 'Nunito', sans-serif;
+  --font-myNunito: 'Nunito', sans;
 }

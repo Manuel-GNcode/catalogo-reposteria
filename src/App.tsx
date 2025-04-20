@@ -3,9 +3,9 @@ import {Footer} from './components/Footer.tsx'
 import {Hero} from './components/Hero.tsx'
 import { NavBar } from './components/NavBar.tsx'
 import { Route, Routes } from 'react-router-dom'
-import { Desserts } from './pages/Desserts.tsx'
-import { Drinks } from './pages/Drinks.tsx'
-import { Others } from './pages/Others.tsx'
+import { Sopas} from './pages/Sopas.tsx'
+import { Desayunos } from './pages/Desayunos.tsx'
+import { Postres } from './pages/Postres.tsx'
 
 function App() {
   return (
@@ -14,10 +14,10 @@ function App() {
       <Hero></Hero>
       <NavBar></NavBar>
       <Routes>
-        <Route path='/' element={<Desserts />}></Route>
-        <Route path='/drinks' element={<Drinks />}></Route>
-        <Route path='/others' element={<Others />}></Route>
-        <Route path='/*' element={<Desserts />}></Route>
+        <Route path='/' element={<Desayunos />}></Route>
+        <Route path='/sopas' element={<Sopas />}></Route>
+        <Route path='/postres' element={<Postres />}></Route>
+        <Route path='/*' element={<Desayunos />}></Route>
       </Routes>
       <Footer></Footer>
     </>
