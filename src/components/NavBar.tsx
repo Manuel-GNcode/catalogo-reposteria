@@ -1,19 +1,48 @@
-import { NavLink } from "react-router-dom";
+import { catalogo, CatalogoItem } from "../assets/database";
+import { useEffect, useState } from "react";
 
-export const NavBar = () => {
+interface NavBarProps {
+  handleCat: (items: CatalogoItem[]) => void;
+}
+
+export const NavBar = ({handleCat}: NavBarProps) => {
+  useEffect(()=>{
+    handleCat(catalogo.desayunos);
+  }, [handleCat]);
+
+  const [query, setQuery] = useState('');
+  useEffect(()=>{
+    if (query) {
+      const lowerQuery = query.toLowerCase();
+      const filtered: CatalogoItem[] = [];
+
+      for (const category in catalogo) {
+        const matches = catalogo[category as keyof typeof catalogo].filter(item =>
+          item.name.toLowerCase().includes(lowerQuery)
+        );
+  
+        if (matches.length > 0) {
+          matches.forEach(match => filtered.push(match));
+        }
+      }
+
+      handleCat(filtered);
+    }
+  }, [query, handleCat])
+
   return (
     <section className="p-6 max-w-[450px] mx-auto">
       <h1 className="text-2xl font-extrabold text-dark-purple text-center mb-4">Catálogo de productos</h1>
       <nav className="flex flex-col-reverse items-center gap-4">
         <ul className="relative flex justify-between w-full">
-          <li className="bg-dark-purple text-grayish-blue font-bold px-2 py-1 rounded-2xl">
-            <NavLink to="/">Desayunos</NavLink>
+          <li className="cursor-pointer bg-dark-purple text-grayish-blue font-bold px-2 py-1 rounded-2xl">
+            <button onClick={()=>handleCat(catalogo.desayunos)}>Desayunos</button>
           </li>
-          <li className="bg-dark-purple text-grayish-blue font-bold px-2 py-1 rounded-2xl">
-            <NavLink to="/sopas">Sopas</NavLink>
+          <li className="cursor-pointer bg-dark-purple text-grayish-blue font-bold px-2 py-1 rounded-2xl">
+            <button onClick={()=>handleCat(catalogo.sopas)}>Sopas</button>
           </li>
-          <li className="bg-dark-purple text-grayish-blue font-bold px-2 py-1 rounded-2xl">
-            <NavLink to="/postres">Postres</NavLink>
+          <li className="cursor-pointer bg-dark-purple text-grayish-blue font-bold px-2 py-1 rounded-2xl">
+            <button onClick={()=>handleCat(catalogo.postres)}>Postres</button>
           </li>
           <span className="absolute w-full h-3 bg-soft-blue-green -z-1 top-1/2 -translate-y-1/2"></span>
         </ul>
@@ -25,6 +54,8 @@ export const NavBar = () => {
             type="search"
             name="search"
             id="search"
+            value={query}
+            onChange={e => setQuery(e.target.value)}
           />
           <img className="w-auto h-5" src="/images/iconos/buscar.png" alt="Icono de buscar" />
         </label>
