@@ -1,20 +1,14 @@
 import { Food } from "./Food";
+import { CatalogoItem } from "../assets/interfaces";
 
-interface FoodItem {
-  id: string;
-  name: string;
-  urlImg: string;
-  price: string;
-}
-
-export const CatalogoList = ({foodList}: { foodList: FoodItem[] }) => {
+export const CatalogoList = ({foodList}: { foodList: CatalogoItem[] }) => {
   return (
-    <section className="grid grid-cols-2 justify-items-center gap-y-8 mb-6">
+    <div className="grid grid-cols-2 justify-items-center gap-y-8 my-6">
       {foodList.map(item=>{
         return (
-          <Food key={item.name+item.id} name={item.name} urlImg={item.urlImg} price={item.price}></Food>
+          <Food key={item.name+item.id} id={item.id} name={item.name} urlImg={item.urlImg} price={item.price}></Food>
         )
       })}
-    </section>
+    </div>
   )
 }

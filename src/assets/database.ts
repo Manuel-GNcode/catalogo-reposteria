@@ -1,47 +1,40 @@
-export interface CatalogoItem {
-  id: string;
-  name: string;
-  price: string;
-  urlImg: string;
-}
-
 export const catalogo= {
   desayunos: [
     {
       id: '01',
       name: 'brisa',
       price: '15.000',
-      urlImg: '/images/desayunos/desayuno_1.jpg'
+      urlImg: "/images/desayunos/desayuno_1.jpg"
     },
     {
       id: '02',
       name: 'alborada',
       price: '17.000',
-      urlImg: '/images/desayunos/desayuno_2.jpg'
+      urlImg: "/images/desayunos/desayuno_2.jpg"
     },
     {
       id: '03',
       name: 'nube',
       price: '20.000',
-      urlImg: '/images/desayunos/desayuno_3.jpg'
+      urlImg: "/images/desayunos/desayuno_3.jpg"
     },
     {
       id: '04',
       name: 'aura',
       price: '20.000',
-      urlImg: '/images/desayunos/desayuno_4.jpg'
+      urlImg: "/images/desayunos/desayuno_4.jpg"
     },
     {
       id: '05',
       name: 'fresa',
       price: '20.000',
-      urlImg: '/images/desayunos/desayuno_5.jpg'
+      urlImg: "/images/desayunos/desayuno_5.jpg"
     },
     {
       id: '06',
       name: 'arcoiris',
       price: '25.000',
-      urlImg: '/images/desayunos/desayuno_6.jpg'
+      urlImg: "/images/desayunos/desayuno_6.jpg"
     },
   ],
   sopas: [

@@ -1,12 +1,8 @@
-interface FoodProps {
-  name: string;
-  urlImg: string;
-  price: string;
-}
+import { CatalogoItem } from "../assets/interfaces"
 
-export const Food = ({name, urlImg, price}: FoodProps) => {
+export const Food = ({id, name, urlImg, price}: CatalogoItem) => {
   return (
-    <div className="bg-dark-purple relative pb-4 text-center">
+    <div id={name+id} className="bg-dark-purple relative pb-4 text-center">
       <img className="w-30 h-auto" src={urlImg} alt={name} />
       <h2 className="text-intense-rose capitalize">{name}</h2>
       <h3 className="absolute bg-soft-blue-green w-fit rounded-xl px-4 border-2 border-dark-purple bottom-0 left-1/2 translate-y-1/2 -translate-x-1/2 whitespace-nowrap font-bold text-dark-purple">$ {price}</h3>
