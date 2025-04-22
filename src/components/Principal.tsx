@@ -68,7 +68,7 @@ export const Principal = () => {
           />
           <img
             className="w-auto h-5"
-            src="/images/iconos/buscar.png"
+            src="/images/ui/iconos/buscar.png"
             alt="Icono de buscar"
           />
         </label>
