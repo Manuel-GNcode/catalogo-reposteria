@@ -56,9 +56,9 @@ export const Principal = () => {
           <span className="absolute w-full h-3 bg-soft-blue-green -z-1 top-1/2 -translate-y-1/2"></span>
         </div>
 
-        <label htmlFor="search" className="flex bg-grayish-blue p-1 rounded-xl items-center">
+        <label htmlFor="search" className="w-full max-w-[300px] flex bg-grayish-blue p-1 rounded-xl items-center">
           <input
-            className="w-[200px] outline-0"
+            className="w-full outline-0 px-2"
             placeholder="Alborada"
             type="search"
             name="search"

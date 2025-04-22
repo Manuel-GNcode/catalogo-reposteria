@@ -1,7 +1,7 @@
 export const Header = () => {
   return (
     <header className="flex flex-col gap-6 px-12 py-6 items-center">
-      <img src="logo.png" alt="Logo dulce despertar" className=""/>
+      <img src="logo.png" alt="Logo dulce despertar" className="max-h-30"/>
 
       <div className="flex gap-4 relative">
         <a href="#">

@@ -3,7 +3,7 @@ import { CatalogoItem } from "../assets/interfaces";
 
 export const CatalogoList = ({foodList}: { foodList: CatalogoItem[] }) => {
   return (
-    <div className="grid grid-cols-2 justify-items-center gap-y-8 my-6">
+    <div className="grid grid-cols-2 justify-items-center gap-x-6 gap-y-8 my-6">
       {foodList.map(item=>{
         return (
           <Food key={item.name+item.id} id={item.id} name={item.name} urlImg={item.urlImg} price={item.price}></Food>
