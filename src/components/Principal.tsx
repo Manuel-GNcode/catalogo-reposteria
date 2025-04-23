@@ -38,19 +38,19 @@ export const Principal = () => {
   }, [query])
 
   return (
-    <section className="p-6 max-w-[450px] mx-auto">
+    <section className="py-6 px-10 mx-auto sm:px-30 lg:px-50">
       <h1 className="text-2xl font-extrabold text-dark-purple text-center mb-4">
         Catálogo de productos
       </h1>
-      <nav className="flex flex-col-reverse items-center gap-4">
-        <div className="relative flex justify-between w-full">
-          <button onClick={onClickDesayunos} className="cursor-pointer bg-dark-purple text-grayish-blue font-bold px-2 py-1 rounded-2xl">
+      <nav className="flex flex-col-reverse items-center gap-4 mb-8 md:flex-row">
+        <div className="relative flex justify-between w-full gap-2">
+          <button onClick={onClickDesayunos} className="cursor-pointer bg-dark-purple text-grayish-blue font-bold px-4 py-1 rounded-2xl">
             Desayunos
           </button>
-          <button onClick={onClickSopas} className="cursor-pointer bg-dark-purple text-grayish-blue font-bold px-2 py-1 rounded-2xl">
+          <button onClick={onClickSopas} className="cursor-pointer bg-dark-purple text-grayish-blue font-bold px-4 py-1 rounded-2xl">
             Sopas
           </button>
-          <button onClick={onClickPostres} className="cursor-pointer bg-dark-purple text-grayish-blue font-bold px-2 py-1 rounded-2xl">
+          <button onClick={onClickPostres} className="cursor-pointer bg-dark-purple text-grayish-blue font-bold px-4 py-1 rounded-2xl">
             Postres
           </button>
           <span className="absolute w-full h-3 bg-soft-blue-green -z-1 top-1/2 -translate-y-1/2"></span>
@@ -67,7 +67,7 @@ export const Principal = () => {
             onChange={(e)=>setQuery(e.target.value)}
           />
           <img
-            className="w-auto h-5"
+            className="w-auto h-4"
             src="/images/ui/iconos/buscar.png"
             alt="Icono de buscar"
           />

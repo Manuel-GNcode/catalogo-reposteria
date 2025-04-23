@@ -1,14 +1,5 @@
 @import "tailwindcss";
 
-@layer components {
-  .footer_div {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    height: 60px;
-  }
-}
-
 @font-face {
   font-family: 'Nunito';
   font-style: normal;
@@ -16,6 +7,7 @@
   font-display: swap;
   src: url("/fonts/Nunito-VariableFont_wght.ttf") format("truetype");
 }
+
 html {
   font-family: 'Nunito', 'Times New Roman', Times, serif;
 }
