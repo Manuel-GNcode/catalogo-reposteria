@@ -1,8 +1,8 @@
-import {Header} from './components/Header.tsx'
-import {Footer} from './components/Footer.tsx'
-import {Hero} from './components/Hero.tsx'
-import { Principal } from './components/Principal.tsx'
-import { Suscribete } from './components/Suscribete.tsx'
+import {Header} from './components/Header/Header.tsx'
+import {Footer} from './components/Footer/Footer.tsx'
+import {Hero} from './components/Hero/Hero.tsx'
+import { Principal } from './components/Principal/Principal.tsx'
+import { Suscribete } from './components/Suscribete/Suscribete.tsx'
 
 function App() {
 

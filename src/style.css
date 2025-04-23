@@ -12,6 +12,14 @@ html {
   font-family: 'Nunito', 'Times New Roman', Times, serif;
 }
 
+.hero-button {
+  @apply bg-dark-purple text-soft-blue-green text-2xl rounded-3xl px-8 py-1 absolute bottom-6 left-1/2 translate-x-[-50%] cursor-pointer border-4 border-dark-purple hover:bg-soft-blue-green hover:text-dark-purple whitespace-nowrap font-bold sm:text-3xl lg:text-4xl lg:bottom-12;
+}
+
+.category-button {
+  @apply bg-dark-purple text-white font-bold px-4 py-1 rounded-2xl border-3 border-dark-purple cursor-pointer;
+}
+
 .active {
   @apply bg-soft-blue-green text-dark-purple;
 }

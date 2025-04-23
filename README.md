@@ -1,54 +1,81 @@
-# React + TypeScript + Vite
+# Catálogo de Repostería 🍰
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto es una aplicación web desarrollada con **React**, **TypeScript**, y **Vite**. Permite a los usuarios explorar un catálogo de productos de repostería, como desayunos, sopas y postres, con una interfaz moderna y responsiva.
 
-Currently, two official plugins are available:
+## Características ✨
+- Catálogo interactivo con categorías (Desayunos, Sopas, Postres).
+- Búsqueda de productos por nombre.
+- Diseño responsivo utilizando **TailwindCSS**.
+- Gestión de datos con TypeScript para mayor seguridad.
+- Imágenes optimizadas para la web.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## Tecnologías utilizadas 🛠️
+- **React**: Biblioteca para construir interfaces de usuario.
+- **TypeScript**: Superset de JavaScript para tipado estático.
+- **Vite**: Herramienta de desarrollo rápida y ligera.
+- **TailwindCSS**: Framework de CSS para diseño rápido y eficiente.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Instalación 🚀
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Sigue estos pasos para configurar el proyecto en tu máquina local:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+1. Clona este repositorio:
+   ```bash
+   git clone https://github.com/tu-usuario/catalogo-reposteria.git
+   cd catalogo-reposteria
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+2. Instala dependencias:
+    npm isntall
+
+3. inicial el servidor de desarrollo:
+    npm run dev
+
+4. Abre la aplicación en tu navegador en http://localhost:5173
+
+--
+
+## Estructura del proyecto
+├── public/
+│   ├── images/
+│   │   ├── catalogo/
+│   │   │   ├── desayunos/
+│   │   │   ├── sopas/
+│   │   │   ├── postres/
+│   │   ├── ui/
+│   │       ├── iconos/
+│   ├── fonts/
+│   ├── favicon.png
+│   ├── og.jpg
+├── src/
+│   ├── assets/
+│   │   ├── data/
+│   │   │   ├── database.ts
+│   │   ├── types/
+│   │       ├── interfaces.ts
+│   ├── components/
+│   │   ├── Header/
+│   │   ├── Footer/
+│   │   ├── Hero/
+│   │   ├── Principal/
+│   │   ├── Suscribete/
+│   ├── App.tsx
+│   ├── main.tsx
+│   ├── style.css
+├── [README.md](http://_vscodecontentref_/1)
+├── [package.json](http://_vscodecontentref_/2)
+├── [tsconfig.json](http://_vscodecontentref_/3)
+├── [vite.config.ts](http://_vscodecontentref_/4)
+
+--
+
+## Contribuir 🧑‍💻
+¡Las contribuciones son bienvenidas!.
+
+--
+
+## Autor ✍️
+Desarrollado por Mau. Si tienes preguntas o sugerencias, no dudes en contactarme.
