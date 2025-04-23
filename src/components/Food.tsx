@@ -6,8 +6,10 @@ export const Food = ({ id, name, urlImg, price }: CatalogoItem) => {
       id={name + id}
       className="bg-dark-purple relative pb-4 mr-[14px] text-center lg:mr-5"
     >
-      <img src={urlImg} alt={name} />
-      <h2 className="text-intense-rose capitalize">{name}</h2>
+      <figure className="bg-grayish-blue mb-2">
+        <img src={urlImg} width="720" height="960" alt={name} />
+      </figure>
+      <h2 className="text-intense-rose capitalize font-bold">{name}</h2>
       <h3 className="absolute bg-soft-blue-green rounded-xl px-4 border-2 border-dark-purple bottom-0 left-1/2 translate-y-1/2 -translate-x-1/2 whitespace-nowrap font-bold text-dark-purple">
         $ {price}
       </h3>

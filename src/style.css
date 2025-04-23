@@ -12,6 +12,10 @@ html {
   font-family: 'Nunito', 'Times New Roman', Times, serif;
 }
 
+.active {
+  @apply bg-soft-blue-green text-dark-purple;
+}
+
 @theme {
   /* Primary */
   --color-soft-blue-green: hsl(140.909, 100%, 87%);
