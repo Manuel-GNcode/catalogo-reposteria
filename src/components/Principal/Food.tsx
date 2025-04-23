@@ -14,7 +14,7 @@ export const Food = ({ id, name, urlImg, price }: CatalogoItem) => {
         $ {price}
       </h3>
       <button aria-label="Botón para compartir página" className="absolute cursor-pointer top-0 right-0 -translate-y-1/2 translate-x-1/2">
-        <div className='size-7 bg-center bg-cover bg-[url("/images/ui/iconos/compartir.png")] hover:bg-[url("/images/ui/iconos/compartir_active.png")] lg:size-10'></div>
+        <div className='size-7 bg-center bg-cover bg-[url("/images/ui/iconos/compartir.webp")] hover:bg-[url("/images/ui/iconos/compartir_active.webp")] lg:size-10'></div>
       </button>
     </div>
   );
