@@ -6,13 +6,13 @@ export const Footer = () => {
           <img className="w-16 h-auto" src="logo_footer.webp" alt="Logo" />
           <div className="relative z-1 flex gap-2 px-4">
             <a href="#" target="_BLANK">
-              <img src="images/ui/iconos/instagram_active.webp" alt="Instagram" />
+              <img width="83" height="83" src="images/ui/iconos/instagram_active.webp" alt="Instagram" />
             </a>
             <a href="#" target="_BLANK">
-              <img src="images/ui/iconos/youtube_active.webp" alt="Instagram" />
+              <img width="83" height="83" src="images/ui/iconos/youtube_active.webp" alt="Instagram" />
             </a>
             <a href="#" target="_BLANK">
-              <img src="images/ui/iconos/pinterest_active.webp" alt="Instagram" />
+              <img width="83" height="83" src="images/ui/iconos/pinterest_active.webp" alt="Instagram" />
             </a>
             <span className="absolute w-full h-2 rounded-xl bg-soft-blue-green -z-1 left-1/2 top-1/2 -translate-1/2"></span>
           </div>
@@ -20,7 +20,7 @@ export const Footer = () => {
 
         <div className="text-[12px] flex flex-col gap-2 sm:flex-row sm:gap-6">
           <div className="flex gap-2 items-center">
-            <img className="object-contain w-4" src="images/ui/iconos/ubicacion.webp" alt="Ubicación" />
+            <img className="object-contain w-4 h-auto" src="images/ui/iconos/ubicacion.webp" alt="Ubicación" />
             <div>
               <p>Cra. 15 #6-89</p>
               <p>Barrio El Madrigal</p>
@@ -29,7 +29,7 @@ export const Footer = () => {
           </div>
 
           <div className="flex items-center gap-2">
-            <img className="object-contain w-4" src="images/ui/iconos/whatsapp.webp" alt="Whatsapp" />
+            <img className="object-contain w-4 h-auto" src="images/ui/iconos/whatsapp.webp" alt="Whatsapp" />
             <p>¡Contáctanos!</p>
           </div>
         </div>

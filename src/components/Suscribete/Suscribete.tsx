@@ -13,15 +13,17 @@ export const Suscribete = () => {
         </p>
         <form className="mt-2" action="#">
           <div className="flex gap-2 bg-soft-blue-green rounded-2xl py-1 px-2">
-            <input
-              className="bg-white rounded-xl w-full outline-0 text-dark-purple px-2"
-              type="email"
-              name="email"
-              id="email"
-            />
+            <label className="bg-white rounded-xl w-full ">
+              <span className="sr-only">Correo electrónico</span>
+              <input
+                className="outline-0 text-dark-purple px-2"
+                type="email"
+                name="email"
+              />
+            </label>
             <button type="submit" className="cursor-pointer">
               <img
-                className="h-4"
+                className="h-4 w-auto"
                 src="images/ui/iconos/enviar.webp"
                 alt="botón de enviar formulario"
               />

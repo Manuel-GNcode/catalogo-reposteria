@@ -1,7 +1,7 @@
 export const Header = () => {
   return (
     <header className="flex flex-col gap-6 p-6 items-center sm:flex-row sm:justify-between sm:items-end sm:px-10 lg:px-30 lg:py-4">
-      <img src="logo.webp" alt="Logo dulce despertar" className="h-auto w-60 lg:w-35"/>
+      <img width="451" height="204" src="logo.webp" alt="Logo dulce despertar" className="h-auto w-60 lg:w-35"/>
 
       <div className="flex gap-3 relative w-30 sm:pb-4 lg:w-25">
         <a href="#" aria-label="Ir a Instagram" className='grow aspect-1/1 bg-cover bg-[url("/images/ui/iconos/instagram.webp")] hover:bg-[url("/images/ui/iconos/instagram_active.webp")]'>
