@@ -5,7 +5,7 @@ export const Food = ({ id, name, urlImg, price }: CatalogoItem) => {
   const [showModal, setShowModal] = useState(false);
 
   const handleShare = () => {
-    const text = `En la repostería Dulce despertar ofrecemos ${name}, ven y pruébalo: www.catalogo.com`;
+    const text = `En la repostería Dulce despertar ofrecemos: ${name}, ven y pruébalo: www.catalogo-repostería.com`;
     navigator.clipboard.writeText(text).then(() => {
       setShowModal(true);
       setTimeout(() => setShowModal(false), 2000);
@@ -32,7 +32,7 @@ export const Food = ({ id, name, urlImg, price }: CatalogoItem) => {
       </button>
 
       {showModal && (
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-soft-blue-green text-dark-purple px-4 py-2 rounded-xl shadow-lg">
+        <div className="font-bold absolute top-1/2 left-1/2 -translate-1/2 bg-soft-blue-green text-dark-purple px-4 py-2 rounded-xl">
           ¡Texto copiado al portapapeles!
         </div>
       )}
