@@ -1,16 +1,29 @@
 import { CatalogoList } from "./CatalogoList";
 import { Button } from "./Button";
 import { useCatalogo } from "../../hooks/useCatalogo";
+import { useLayoutEffect, useRef } from "react";
+import { principalAnimation } from "./principalAnimation";
+import { gsap } from "gsap";
 
 export const Principal = () => {
+  const principalRef = useRef(null);
+
+  useLayoutEffect(() => {
+    const ctx = gsap.context(()=>{
+      principalAnimation();
+    }, principalRef);
+
+    return ()=> ctx.revert();
+  }, []);
+
   const { category, list, query, onClickCategory, onChangeInput } = useCatalogo();
 
   return (
-    <section className="py-6 px-10 sm:px-30 lg:px-50 min-h-[600px]">
-      <h1 className="text-2xl font-extrabold text-dark-purple text-center mb-4">
+    <section ref={principalRef} className="py-6 px-10 sm:px-30 lg:px-50 min-h-[600px]">
+      <h1 id="p-title" className="text-2xl font-extrabold text-dark-purple text-center mb-6 lg:text-3xl">
         Catálogo de productos
       </h1>
-      <nav className="flex flex-col-reverse items-center gap-4 mb-8 md:flex-row">
+      <nav id="p-nav" className="flex flex-col-reverse items-center gap-4 mb-8 md:flex-row">
         <div className="relative flex justify-between w-full gap-2">
           <Button 
           handleClick={()=>onClickCategory(1)} classActive={category==1? 'active':''}

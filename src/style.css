@@ -23,7 +23,7 @@ html {
 @keyframes l1 {to{transform: rotate(.5turn)}}
 
 .hero-button {
-  @apply bg-dark-purple text-soft-blue-green text-2xl rounded-3xl px-8 py-1 absolute bottom-6 left-1/2 translate-x-[-50%] cursor-pointer border-4 border-dark-purple hover:bg-soft-blue-green hover:text-dark-purple whitespace-nowrap font-bold sm:text-3xl lg:text-4xl lg:bottom-12;
+  @apply bg-dark-purple absolute border-4 border-dark-purple h-18 w-84 bottom-8 left-1/2 -translate-x-1/2 rounded-4xl text-2xl text-soft-blue-green font-bold cursor-pointer hover:bg-soft-blue-green hover:text-dark-purple lg:text-4xl;
 }
 
 .category-button {

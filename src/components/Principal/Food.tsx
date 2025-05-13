@@ -2,6 +2,7 @@ import { CatalogoItem } from "../../assets/types/interfaces";
 import { useState } from "react";
 
 export const Food = ({ id, name, urlImg, price }: CatalogoItem) => {
+
   const [showModal, setShowModal] = useState(false);
 
   const handleShare = () => {
@@ -18,9 +19,9 @@ export const Food = ({ id, name, urlImg, price }: CatalogoItem) => {
   return (
     <div
       id={name + id}
-      className="bg-dark-purple relative pb-4 mr-[14px] text-center lg:mr-5"
+      className="bg-dark-purple relative pb-4 mr-[14px] text-center lg:mr-5 food-principal rounded-br-[48px] rounded-tl-[48px] px-1 pt-1"
     >
-      <figure className="bg-grayish-blue mb-2">
+      <figure className="bg-grayish-blue mb-2 rounded-tl-[44px] overflow-hidden">
         <img src={urlImg} width="720" height="960" alt={name} />
       </figure>
       <h2 className="text-intense-rose capitalize font-bold">{name}</h2>
